@@ -1143,6 +1143,7 @@ body {
       width: auto; /* Adjust the width to your preference */
       height: auto; /* Adjust the height to your preference */
       overflow-x: hidden;
+      margin: 0;
     }
     
     .red-text{
@@ -1507,6 +1508,7 @@ body {
       width: auto; /* Adjust the width to your preference */
       height: auto; /* Adjust the height to your preference */
       overflow-x: hidden;
+      margin: 0;
     }
     
     .red-text{
