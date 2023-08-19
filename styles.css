@@ -188,7 +188,7 @@ body {
   .socials-nav {
     margin-right: 50px;
     margin-top:-400px;
-    margin-bottom: 160px;
+    margin-bottom: 200px;
     top: 30%;
     transform: translateY(-50%);
     right: 20px; /* Adjust the distance from the right side */
@@ -285,7 +285,6 @@ body {
     padding-bottom: 10px;
     font-size: 30px;
     margin-top: -140px;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
   }  
   .design2{
     background-color: #2A363B;
@@ -298,7 +297,6 @@ body {
     font-size: 30px;
     margin-top: -30px;
     margin-left: -10px;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
   }
 
   .about{
@@ -529,7 +527,7 @@ body {
       .socials-nav {
         margin-right: 50px;
         margin-top:-300px;
-        margin-bottom: 60px;
+        margin-bottom: 100px;
         top: 30%;
         transform: translateY(-50%);
         right: 20px; /* Adjust the distance from the right side */
@@ -695,7 +693,7 @@ body {
       }
     }
   /* Responsive styles for smaller screens */
-  @media screen and (max-width: 960px), screen and (max-width:1600px) {
+  @media screen and (max-width: 960px), screen and (max-width:1440px) {
     body {
       padding-top: 40px;
       font-family: Poppins;
@@ -836,8 +834,9 @@ body {
         font-size: 30px;
         font-weight: bolder;
         letter-spacing: 2px;
-        margin-top: 300px;
+        margin-top: 150px;
         margin-left: 30px;
+        z-index: -1;
       }
       
       .image-container p {
@@ -850,6 +849,7 @@ body {
         max-width: 100%; /* Adjust the size of your image */
         margin-right: 20px; /* Add spacing between image and text */
         height: auto;
+        z-index: -1;
       }
       
       h2 {
@@ -899,8 +899,9 @@ body {
     
       .socials-nav {
         margin-right: 30px;
-        margin-top:-40%;
-        margin-bottom: 24%;
+        margin-top:-30%;
+        margin-bottom: 13%;
+        margin-left: 30px;
         top: 30%;
         transform: translateY(-50%);
         right: 20px; /* Adjust the distance from the right side */
@@ -1235,7 +1236,7 @@ body {
       .socials-nav {
         margin-right: 30px;
         margin-top:-400px;
-        margin-bottom: 162px;
+        margin-bottom: 200px;
         top: 30%;
         transform: translateY(-50%);
         right: 20px; /* Adjust the distance from the right side */
@@ -1583,7 +1584,7 @@ body {
     .socials-nav {
         margin-top:-300px;
         margin-right: 20px;
-        margin-bottom: 70px;
+        margin-bottom: 120px;
         top: 30%;
         transform: translateY(-50%);
         display: flex;
