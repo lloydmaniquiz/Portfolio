@@ -46,8 +46,11 @@ body {
 .topnav {
   background-color: rgba(0, 0, 0, 0);
   padding-right: 40px;
+  padding-left: auto;
   float: right;
-  border-radius: 20px;
+  position: sticky;
+  top: 40px; /* Stick to the top of the viewport */
+  z-index: 101; /* Ensure the navigation bar stays above other content */
 }
 
 .topnav a {
@@ -387,6 +390,9 @@ body {
       padding-right: 40px;
       float: right;
       border-radius: 20px;
+      position: sticky;
+      top: 40px; /* Stick to the top of the viewport */
+      z-index: 101; /* Ensure the navigation bar stays above other content */
     }
     
     .topnav a {
@@ -733,6 +739,9 @@ body {
       padding-right:30px;
       float: right;
       border-radius: 10px;
+      position: sticky;
+      top: 20px; /* Stick to the top of the viewport */
+      z-index: 101; /* Ensure the navigation bar stays above other content */
     }
     
     .topnav a {
@@ -1072,6 +1081,9 @@ body {
       float: right;
       border-radius: 10px;
       margin-top: 10px;
+      position: sticky;
+      top: 30px; /* Stick to the top of the viewport */
+      z-index: 101; /* Ensure the navigation bar stays above other content */
     }
     
     .topnav a {
@@ -1413,6 +1425,9 @@ body {
       border-radius: 10px;
       padding-left: 20px;
       margin-top: -10px;
+      position: sticky;
+      top: 10px; /* Stick to the top of the viewport */
+      z-index: 101; /* Ensure the navigation bar stays above other content */
     }
     
     .topnav a {
