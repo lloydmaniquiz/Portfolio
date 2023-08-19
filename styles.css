@@ -187,8 +187,8 @@ body {
 
   .socials-nav {
     margin-right: 50px;
-    margin-top:-300px;
-    margin-bottom: 60px;
+    margin-top:-400px;
+    margin-bottom: 160px;
     top: 30%;
     transform: translateY(-50%);
     right: 20px; /* Adjust the distance from the right side */
@@ -317,9 +317,43 @@ body {
     text-align: center;
   }
 
+  #about {
+    animation: smoothScroll 1s ease-in-out;
+  }
+  
+  /* Ensure smooth scrolling for the entire page */
+  html {
+    scroll-behavior: smooth;
+  }
 
-  /* Responsive styles for smaller screens */
-  @media screen and (max-width: 960px) {
+  h2{
+    padding-top: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #2A363B;
+  }
+
+  .programming-languages-img{
+    margin-top: -15px;
+    justify-content: center;
+    display: flex;
+  }
+
+  h3{
+    padding-top: 20px;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #2A363B;
+  }
+
+  .documentations{
+    margin-top: -15px;
+    justify-content: center;
+    display: flex;
+  }
+
+  @media screen and (max-width: 1800px) {
     body {
       padding-top: 40px;
       font-family: Poppins;
@@ -327,9 +361,352 @@ body {
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-      width: 100vw; /* Adjust the width to your preference */
-      height: 100vh; /* Adjust the height to your preference */
+      width: auto; /* Adjust the width to your preference */
+      height: auto; /* Adjust the height to your preference */
       overflow-x: hidden;
+      margin: 0;
+    }
+    
+    .bolder-text{
+      font-weight: bolder;
+    }
+    .red-text{
+      color:#ff847c;
+    }
+    .toplogo {
+      margin-top: -30px;
+      float: left;
+      padding-left: 30px;
+    }
+    
+    .toplogo:hover{
+      text-shadow: 
+        2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    
+    .topnav {
+      background-color: rgba(0, 0, 0, 0);
+      padding-right: 40px;
+      float: right;
+      border-radius: 20px;
+    }
+    
+    .topnav a {
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 10px;
+      text-decoration: none;
+      font-size: max((var(--nav-width) * 0.2));
+    }
+    
+    .topnav a.active {
+      background-color: #e84a5f;
+      color: white;
+    }
+    
+      a {
+        text-decoration:none;
+        color: white;
+        padding-left: 20px;
+     }
+    
+      .button {
+        background-color: #e84a5f;
+        border: none;
+        color: #2A363B;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: max((var(--nav-width) * 0.2));
+        font-family: Poppins;
+        font-weight: bolder;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+      }
+    
+      .button1 {
+        background-color: #99b898; 
+        color: #2A363B; 
+        border-radius: 10px;
+      }
+      
+      .button1:hover {
+        background-color: #2A363B;
+        color: white;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+      }
+      
+      .button2 {
+        background-color: #99b898; 
+        color: #2A363B; 
+        border-radius: 10px;
+      }
+      
+      .button2:hover {
+        background-color: #2A363B;
+        color: white;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+      }
+      
+      .button3 {
+        background-color: #99b898; 
+        color: #2A363B; 
+        border-radius: 10px;
+      }
+      
+      .button3:hover {
+        background-color: #2A363B;
+        color: white;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+      }
+    
+      .button4 {
+        background-color: #ff847c;
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-decoration: none;
+        font-size: 16px;
+        font-family: Poppins;
+        font-weight: bolder;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        border-radius: 50px;
+        letter-spacing: 0px;
+      }
+      
+      .button4:hover {
+        background-color: #99b898;
+        color: white;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+      }
+    
+      .image-container {
+        display: flex;
+        align-items: center; /* Center items vertically */
+        color: #FECEA8;
+        font-size: 30px;
+        font-weight: bolder;
+        letter-spacing: 4px;
+        margin-top: 60px;
+        margin-left: 250px;
+      }
+      
+      .image-container p {
+        margin-left: 20px;
+        margin-top: 20%;
+      }
+      
+      .image {
+        width: 26vw;
+        max-width: 100%; /* Adjust the size of your image */
+        margin-right: 20px; /* Add spacing between image and text */
+        height: auto;
+      }
+      
+      h2 {
+        color: white;
+        font-weight: bolder;
+      }
+      
+      .unique-color {
+        color: white;
+        font-size: 40px;
+        font-weight: bold;
+        letter-spacing: 0px;
+      }
+      
+      
+      .course-text {
+        font-size: 15px;
+        font-weight: regular;
+        margin: 5px;
+      }
+    
+      .socials-nav {
+        margin-right: 50px;
+        margin-top:-300px;
+        margin-bottom: 60px;
+        top: 30%;
+        transform: translateY(-50%);
+        right: 20px; /* Adjust the distance from the right side */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end; /* Align items to the right side */
+    }
+    
+    .socials-nav p {
+        font-family: "Sequel-100-Black";
+        font-size: 20px;
+        color: var(--pastel-white);
+        padding-left: 10px; /* Adjust as needed */
+        margin-top: 10px; /* Adjust as needed */
+        transition-duration: 0.4s;
+    }
+    
+      .image-button1{
+        width: 50px; /* Set the desired width of the button */
+        height: 50px; /* Set the desired height of the button */
+        background-image: url('assets/images/facebook.png'); /* Replace with the path to your PNG image */
+        background-size: cover; /* Adjust the image size to cover the button */
+        border: none; /* Remove default button styling */
+        cursor: pointer; /* Show pointer cursor on hover */
+        background-color: rgba(0, 0, 0, 0);
+        transition-duration: 0.4s;
+        margin-bottom: 20px;
+      }
+      .image-button1:hover{
+        background-color: #2A363B;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        border-radius: 10px;
+      }
+    
+      .image-button2{
+        width: 50px; /* Set the desired width of the button */
+        height: 50px; /* Set the desired height of the button */
+        background-image: url('assets/images/instagram.png'); /* Replace with the path to your PNG image */
+        background-size: cover; /* Adjust the image size to cover the button */
+        border: none; /* Remove default button styling */
+        cursor: pointer; /* Show pointer cursor on hover */
+        background-color: rgba(0, 0, 0, 0);
+        transition-duration: 0.4s;
+        margin-bottom: 20px;
+      }
+      .image-button2:hover{
+        background-color: #2A363B;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        border-radius: 10px;
+      }
+    
+      .image-button3{
+        width: 50px; /* Set the desired width of the button */
+        height: 50px; /* Set the desired height of the button */
+        background-image: url('assets/images/twitter.png'); /* Replace with the path to your PNG image */
+        background-size: cover; /* Adjust the image size to cover the button */
+        border: none; /* Remove default button styling */
+        cursor: pointer; /* Show pointer cursor on hover */
+        background-color: rgba(0, 0, 0, 0);
+        transition-duration: 0.4s;
+        margin-bottom: 20px;
+      }
+    
+      .image-button3:hover{
+        background-color: #2A363B;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        border-radius: 10px;
+      }
+    
+      .image-button4{
+        width: 50px; /* Set the desired width of the button */
+        height: 50px; /* Set the desired height of the button */
+        background-image: url('assets/images/github.png'); /* Replace with the path to your PNG image */
+        background-size: cover; /* Adjust the image size to cover the button */
+        border: none; /* Remove default button styling */
+        cursor: pointer; /* Show pointer cursor on hover */
+        background-color: rgba(0, 0, 0, 0);
+        transition-duration: 0.4s;
+        margin-bottom: 20px;
+      }
+      .image-button4:hover{
+        background-color: #2A363B;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        border-radius: 10px;
+      }
+    
+      .design1{
+        background-color: #ff847c;
+        font-family: "Sequel-100-Black";
+        color: var(--pastel-white);
+        float: right;
+        padding-left: 100%;
+        padding-right: 30px;
+        padding-bottom: 10px;
+        font-size: 30px;
+        margin-top: -140px;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+      }  
+      .design2{
+        background-color: #2A363B;
+        font-family: "Sequel-100-Black";
+        color: var(--pastel-white);
+        float: left;
+        padding-right: 100%;
+        padding-left: 40px;
+        padding-bottom: 10px;
+        font-size: 30px;
+        margin-top: -30px;
+        margin-left: -10px;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+      }
+    
+      .about{
+        padding-bottom: 100px;
+      }
+      .about h1{
+        padding-top: 100px;
+        font-family: "Sequel-100-Black";
+        text-align: center;
+        color: #2A363B;
+      }
+    
+      .about p{
+        font-family: Poppins;
+        color: #2A363B;
+        text-align: center;
+      }
+    
+      #about {
+        animation: smoothScroll 1s ease-in-out;
+      }
+      
+      /* Ensure smooth scrolling for the entire page */
+      html {
+        scroll-behavior: smooth;
+      }
+    
+      h2{
+        padding-top: 20px;
+        text-align: center;
+        letter-spacing: 2px;
+        color: #2A363B;
+      }
+    
+      .programming-languages-img{
+        margin-top: -15px;
+        justify-content: center;
+        display: flex;
+      }
+    
+      h3{
+        padding-top: 20px;
+        font-size: 24px;
+        text-align: center;
+        letter-spacing: 2px;
+        color: #2A363B;
+      }
+    
+      .documentations{
+        margin-top: -15px;
+        justify-content: center;
+        display: flex;
+      }
+    }
+  /* Responsive styles for smaller screens */
+  @media screen and (max-width: 960px), screen and (max-width:1600px) {
+    body {
+      padding-top: 40px;
+      font-family: Poppins;
+      background: linear-gradient(to bottom, #2A363B, #99b898);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: auto; /* Adjust the width to your preference */
+      height: auto; /* Adjust the height to your preference */
+      overflow-x: hidden;
+      margin: 0;
     }
 
     .red-text{
@@ -341,6 +718,12 @@ body {
       padding-left: 0px;
     }
     
+    .toplogo h2{
+      margin-top: 12px;
+      font-size: 20px;
+      margin-left: 10px;
+    }
+
     .toplogo:hover{
       margin-top: -20px;
       text-shadow: 
@@ -359,7 +742,7 @@ body {
       text-align: center;
       padding: 0px;
       text-decoration: none;
-      font-size:13px;
+      font-size:10px;
     }
     
     .topnav a.active {
@@ -515,9 +898,9 @@ body {
       }
     
       .socials-nav {
-        margin-right: 50px;
-        margin-top:-400px;
-        margin-bottom: 152px;
+        margin-right: 30px;
+        margin-top:-40%;
+        margin-bottom: 24%;
         top: 30%;
         transform: translateY(-50%);
         right: 20px; /* Adjust the distance from the right side */
@@ -598,6 +981,61 @@ body {
         box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
         border-radius: 10px;
       }
+
+      .about{
+        padding-bottom: 100px;
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+      .about h1{
+        padding-top: 100px;
+        font-family: "Sequel-100-Black";
+        text-align: center;
+        color: #2A363B;
+      }
+    
+      .about p{
+        font-family: Poppins;
+        color: #2A363B;
+        text-align: center;
+      }
+    
+      #about {
+        animation: smoothScroll 1s ease-in-out;
+      }
+      
+      /* Ensure smooth scrolling for the entire page */
+      html {
+        scroll-behavior: smooth;
+      }
+
+      h2{
+        padding-top: 20px;
+        text-align: center;
+        letter-spacing: 2px;
+        color: #2A363B;
+      }
+    
+      .programming-languages-img{
+        margin-top: -15px;
+        justify-content: center;
+        display: flex;
+      }
+    
+      h3{
+        padding-top: 20px;
+        font-size: 24px;
+        text-align: center;
+        letter-spacing: 2px;
+        color: #2A363B;
+      }
+    
+      .documentations{
+        margin-top: -15px;
+        justify-content: center;
+        display: flex;
+      }
+    
   }
 
   @media screen and (max-width: 768px) {
@@ -608,8 +1046,8 @@ body {
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-      width: 100vw; /* Adjust the width to your preference */
-      height: 100vh; /* Adjust the height to your preference */
+      width: auto; /* Adjust the width to your preference */
+      height: auto; /* Adjust the height to your preference */
       overflow-x: hidden;
     }
     
@@ -632,14 +1070,14 @@ body {
       padding-right: 30px;
       float: right;
       border-radius: 10px;
+      margin-top: 10px;
     }
     
     .topnav a {
       color: #f2f2f2;
       text-align: center;
-      padding: 0px;
       text-decoration: none;
-      font-size:13px;
+      font-size: 10px;
     }
     
     .topnav a.active {
@@ -795,7 +1233,7 @@ body {
       }
     
       .socials-nav {
-        margin-right: 50px;
+        margin-right: 30px;
         margin-top:-400px;
         margin-bottom: 162px;
         top: 30%;
@@ -878,6 +1316,61 @@ body {
         box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
         border-radius: 10px;
       }
+
+      .about{
+        padding-bottom: 100px;
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+      .about h1{
+        padding-top: 100px;
+        font-family: "Sequel-100-Black";
+        text-align: center;
+        color: #2A363B;
+      }
+    
+      .about p{
+        font-family: Poppins;
+        color: #2A363B;
+        text-align: center;
+      }
+    
+      #about {
+        animation: smoothScroll 1s ease-in-out;
+      }
+      
+      /* Ensure smooth scrolling for the entire page */
+      html {
+        scroll-behavior: smooth;
+      }
+
+      h2{
+        padding-top: 20px;
+        text-align: center;
+        letter-spacing: 2px;
+        color: #2A363B;
+      }
+    
+      .programming-languages-img{
+        margin-top: -15px;
+        justify-content: center;
+        display: flex;
+      }
+    
+      h3{
+        padding-top: 20px;
+        font-size: 24px;
+        text-align: center;
+        letter-spacing: 2px;
+        color: #2A363B;
+      }
+    
+      .documentations{
+        margin-top: -15px;
+        justify-content: center;
+        display: flex;
+      }
+    
   }
   
   @media screen and (max-width: 480px) {
@@ -888,18 +1381,23 @@ body {
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-      width: 100vw; /* Adjust the width to your preference */
-      height: 100vh; /* Adjust the height to your preference */
+      width: auto; /* Adjust the width to your preference */
+      height: auto; /* Adjust the height to your preference */
       overflow-x: hidden;
     }
     
     .red-text{
       color:#ff847c;
     }
+
     .toplogo {
-      margin-top: -15px;
       float: left;
-      padding-left: 0px;
+    }
+
+    .toplogo h2{
+      margin-top: 12px;
+      font-size: 15px;
+      margin-left: 10px;
     }
     
     .toplogo:hover{
@@ -912,6 +1410,8 @@ body {
       padding-right: 20px;
       float: right;
       border-radius: 10px;
+      padding-left: 20px;
+      margin-top: -10px;
     }
     
     .topnav a {
@@ -919,7 +1419,7 @@ body {
       text-align: center;
       padding: 0px;
       text-decoration: none;
-      font-size:13px;
+      font-size:8px;
     }
     
     .topnav a.active {
@@ -937,14 +1437,14 @@ body {
         background-color: #e84a5f;
         border: none;
         color: #2A363B;
-        padding: 8px 16px;
+        padding: 4px 10px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
         font-size: 12px;
         font-family: Poppins;
         font-weight: bolder;
-        margin: 2px 1px;
+        margin-top: 20px;
         transition-duration: 0.4s;
         cursor: pointer;
       }
@@ -991,7 +1491,7 @@ body {
         color: white;
         padding: 8px 16px;
         text-decoration: none;
-        font-size: 20px;
+        font-size: 10px;
         font-family: Poppins;
         font-weight: bolder;
         transition-duration: 0.4s;
@@ -1019,14 +1519,20 @@ body {
       
       .image-container p {
         margin-left: 20px;
+        margin-top: 10%;
+        font-size: 20px;
+      }
+      .image-container p2 {
         margin-top: 15%;
+        font-size: 20px;
       }
       
       .image {
-        width: 26vw;
+        width: 30vw;
         max-width: 100%; /* Adjust the size of your image */
-        margin-right: 20px; /* Add spacing between image and text */
+        margin-right: 10px; /* Add spacing between image and text */
         height: auto;
+        margin-top: -60px;
       }
       
       h2 {
@@ -1074,13 +1580,12 @@ body {
         box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
       }
     
-      .socials-nav {
-        margin-right: 50px;
-        margin-top:-400px;
-        margin-bottom: 222px;
+    .socials-nav {
+        margin-top:-300px;
+        margin-right: 20px;
+        margin-bottom: 70px;
         top: 30%;
         transform: translateY(-50%);
-        right: 20px; /* Adjust the distance from the right side */
         display: flex;
         flex-direction: column;
         align-items: flex-end; /* Align items to the right side */
@@ -1088,7 +1593,7 @@ body {
     
     .socials-nav p {
         font-family: "Sequel-100-Black";
-        font-size: 20px;
+        font-size: 10px;
         color: var(--pastel-white);
         padding-left: 10px; /* Adjust as needed */
         margin-top: 10px; /* Adjust as needed */
@@ -1158,4 +1663,59 @@ body {
         box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
         border-radius: 10px;
       }
+
+      .about{
+        padding-bottom: 100px;
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+      .about h1{
+        padding-top: 100px;
+        font-family: "Sequel-100-Black";
+        text-align: center;
+        color: #2A363B;
+      }
+    
+      .about p{
+        font-family: Poppins;
+        color: #2A363B;
+        text-align: center;
+      }
+    
+      #about {
+        animation: smoothScroll 1s ease-in-out;
+      }
+      
+      /* Ensure smooth scrolling for the entire page */
+      html {
+        scroll-behavior: smooth;
+      }
+
+      h2{
+        padding-top: 20px;
+        text-align: center;
+        letter-spacing: 2px;
+        color: #2A363B;
+      }
+    
+      .programming-languages-img{
+        margin-top: -15px;
+        justify-content: center;
+        display: flex;
+      }
+    
+      h3{
+        padding-top: 20px;
+        font-size: 24px;
+        text-align: center;
+        letter-spacing: 2px;
+        color: #2A363B;
+      }
+    
+      .documentations{
+        margin-top: -15px;
+        justify-content: center;
+        display: flex;
+      }
+    
   }
